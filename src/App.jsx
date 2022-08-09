@@ -1,7 +1,12 @@
 import React from 'react';
+import { useLocation } from 'react-router-dom';
+import AdminLayout from './components/layouts/Admin';
+import AppLayout from './components/layouts/App';
 
 const App = () => {
-  return <div>App</div>;
+  const { pathname } = useLocation();
+  if (pathname.startsWith('/auth')) return <AdminLayout />;
+  return <AppLayout />;
 };
 
 export default App;

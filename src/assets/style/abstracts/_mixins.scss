@@ -6,7 +6,7 @@
   background-blend-mode: overlay;
 }
 
-@mixin flexDefine($justify, $align: false,$wrap: false) {
+@mixin flexDefine($justify, $align: false, $wrap: false) {
   display: flex;
   justify-content: $justify;
   align-items: $align;
