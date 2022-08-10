@@ -52,3 +52,12 @@ input:autofill:focus {
     -text-fill-color: none;
     background: none;
 }
+
+textarea,
+input {
+    border: none;
+    background-color: transparent;
+    resize: none;
+    outline: none;
+    appearance: none;
+}

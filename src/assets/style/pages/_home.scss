@@ -1,0 +1,98 @@
+.section-search {
+    min-height: 450px;
+    background-size: 100% auto;
+    position: relative;
+    background-blend-mode: Darken;
+    padding: 80px 0;
+
+    .container-fluid {
+        padding-left: 20px;
+        padding-right: 20px;
+
+        .banner-wrapper {
+            margin: 0 auto;
+            max-width: 800px;
+            width: 100%;
+
+            .banner-header {
+                margin-bottom: 30px;
+                text-align: center;
+
+                h1 {
+                    margin-bottom: 10px;
+                    font-size: 40px;
+                    font-weight: 600;
+                    color: #272b41;
+                }
+
+                p {
+                    color: #757575;
+                    font-size: 20px;
+                    margin-bottom: 0;
+                }
+            }
+
+            .search-box form {
+                display: flex;
+
+                .search-location {
+                    -ms-flex: 0 0 240px;
+                    flex: 0 0 240px;
+                    margin-right: 12px;
+                    position: relative;
+                    width: 240px;
+                }
+
+                .form-group {
+                    margin-bottom: 1.25rem;
+
+                    .form-control {
+                        color: #333;
+                        font-size: 15px;
+                        min-height: 46px;
+                        padding: 6px 15px;
+                        border: 1px solid #ccc;
+                        box-shadow: inset 0 0px 0px rgb(0 0 0 / 8%);
+                        border-radius: 5px;
+                        padding-left: 35px;
+                        display: block;
+                        width: 100%;
+                        height: calc(1.5em + 0.75rem + 2px);
+                        padding: 0.375rem 0.75rem;
+                        font-size: 1rem;
+                        font-weight: 400;
+                        line-height: 1.5;
+                        color: #495057;
+                        background-color: #fff;
+                        background-clip: padding-box;
+                        border: 1px solid #ced4da;
+                        border-radius: 0.25rem;
+                        transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+                    }
+
+                    .form-text {
+                        display: block;
+                        margin-top: 0.25rem;
+                        color: #757575;
+                        font-size: 13px;
+                    }
+                }
+
+                .search-info {
+                    flex: 0 0 490px;
+                    margin-right: 12px;
+                    position: relative;
+                    width: 490px;
+                }
+
+                .search-btn {
+                    width: 46px;
+                    -ms-flex: 0 0 46px;
+                    flex: 0 0 46px;
+                    height: 46px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
