@@ -1,48 +1,78 @@
 import React from 'react';
 import { BsChevronDown } from 'react-icons/bs';
 import { GrContactInfo } from 'react-icons/gr';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import assets from '../../../assets';
+import { doctorSubmenu, patientSubmenu } from '../../../constants/SubMenu';
 import ButtonHeader from '../Button/ButtonHeader';
 
 const index = () => {
   return (
     <div className='navbar'>
       <div className='navbar-left'>
-        <div className='navbar-left__logo'>
-          <img src={assets.images.Logo} alt='' />
+        <div className='navbar-left__content'>
+          <div className='navbar-left__content__logo'>
+            <img src={assets.images.Logo} alt='' />
+          </div>
+          <ul className='navbar-left__content-menu'>
+            <li>
+              <NavLink
+                to='/'
+                className={({ isActive }) =>
+                  isActive
+                    ? 'navbar-left__content__item active'
+                    : 'navbar-left__content__item'
+                }
+              >
+                Home
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to='doctors'
+                className={({ isActive }) =>
+                  isActive
+                    ? 'navbar-left__content__item active'
+                    : 'navbar-left__content__item'
+                }
+              >
+                Doctors{' '}
+                <span>
+                  <BsChevronDown />
+                </span>
+              </NavLink>
+              <ul className='submenu'>
+                {doctorSubmenu.map((item, index) => (
+                  <li key={index}>
+                    <Link to={item.link}>{item.name}</Link>
+                  </li>
+                ))}
+              </ul>
+            </li>
+            <li>
+              <NavLink
+                to='patients'
+                className={({ isActive }) =>
+                  isActive
+                    ? 'navbar-left__content__item active'
+                    : 'navbar-left__content__item'
+                }
+              >
+                Patients{' '}
+                <span>
+                  <BsChevronDown />
+                </span>
+              </NavLink>
+              <ul className='submenu'>
+                {patientSubmenu.map((item, index) => (
+                  <li key={index}>
+                    <Link to={item.link}>{item.name}</Link>
+                  </li>
+                ))}
+              </ul>
+            </li>
+          </ul>
         </div>
-        <NavLink
-          to='/'
-          className={({ isActive }) =>
-            isActive ? 'navbar-left__item active' : 'navbar-left__item'
-          }
-        >
-          Home
-        </NavLink>
-        <NavLink
-          to='doctors'
-          className={({ isActive }) =>
-            isActive ? 'navbar-left__item active' : 'navbar-left__item'
-          }
-        >
-          Doctors{' '}
-          <span>
-            <BsChevronDown />
-          </span>
-          <div className='submenu'>Hello my name is mahedi</div>
-        </NavLink>
-        <NavLink
-          to='patients'
-          className={({ isActive }) =>
-            isActive ? 'navbar-left__item active' : 'navbar-left__item'
-          }
-        >
-          Patients{' '}
-          <span>
-            <BsChevronDown />
-          </span>
-        </NavLink>
       </div>
       <div className='navbar-right'>
         <div className='navbar-right__contact'>
