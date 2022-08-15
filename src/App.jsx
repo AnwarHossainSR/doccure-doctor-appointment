@@ -1,5 +1,6 @@
 import React from 'react';
 import { useLocation } from 'react-router-dom';
+import 'swiper/css/bundle';
 import AdminLayout from './components/layouts/Admin';
 import AppLayout from './components/layouts/App';
 

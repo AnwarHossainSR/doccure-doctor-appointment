@@ -163,3 +163,273 @@
         }
     }
 }
+
+.section-doctor {
+    background-color: #f8f9fa;
+    padding: 80px 0;
+
+    .container-fluid {
+        width: 100%;
+        padding: 0 20px;
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            //margin-right: -15px;
+            //margin-left: -15px;
+            width: 100%;
+
+            .col-lg-4 {
+                -ms-flex: 0 0 33.333333%;
+                flex: 0 0 33.333333%;
+                max-width: 33.333333%;
+
+                .section-header {
+                    margin-bottom: 30px;
+
+                    h2 {
+                        font-size: 36px;
+                        margin-bottom: 0;
+                        font-weight: 500;
+                    }
+
+                    p {
+                        color: #757575;
+                        font-size: 16px;
+                        margin-bottom: 0;
+                        margin-top: 15px;
+                    }
+                }
+
+                .about-content {
+                    p {
+                        font-size: 14px;
+                        font-weight: 400;
+                        line-height: 26px;
+                        margin: 0;
+                    }
+
+                    a {
+                        background-color: #0de0fe;
+                        border-radius: 4px;
+                        color: #fff;
+                        display: inline-block;
+                        font-size: 16px;
+                        font-weight: 500;
+                        margin-top: 30px;
+                        min-width: 150px;
+                        padding: 15px 20px;
+                        text-align: center;
+                    }
+                }
+            }
+
+            .col-lg-8 {
+                -ms-flex: 0 0 66.666667%;
+                flex: 0 0 66.666667%;
+                max-width: 66.666667%;
+                position: relative;
+                width: 100%;
+                padding-right: 15px;
+                padding-left: 15px;
+
+                .doctor-slider {
+                    box-sizing: border-box;
+                    -webkit-user-select: none;
+                    -moz-user-select: none;
+                    -ms-user-select: none;
+                    user-select: none;
+                    -webkit-touch-callout: none;
+                    -khtml-user-select: none;
+                    -ms-touch-action: pan-y;
+                    touch-action: pan-y;
+                    -webkit-tap-highlight-color: transparent;
+
+                    .slick-list {
+                        @include flexDefine(flex-start, center);
+
+                        .swiper-slide {
+                            width: 280px !important;
+                            min-width: 280px !important;
+                        }
+
+                        .slick-slide {
+                            display: block;
+                            margin-left: 0;
+                            padding: 10px;
+                            width: 280px;
+                            min-width: 280px;
+                            outline: none !important;
+                            float: left;
+                            height: 100%;
+                            min-height: 1px;
+
+                            .profile-widget {
+                                box-shadow: 2px 2px 13px rgb(0 0 0 / 10%);
+                                margin-bottom: 0;
+                                width: 100%;
+                                background-color: #fff;
+                                border: 1px solid #f0f0f0;
+                                border-radius: 4px;
+                                margin-bottom: 30px;
+                                position: relative;
+                                -webkit-transition: all .3s ease 0s;
+                                -moz-transition: all .3s ease 0s;
+                                -o-transition: all .3s ease 0s;
+                                transition: all .3s ease 0s;
+                                padding: 15px;
+                                cursor: pointer;
+
+                                .doc-img {
+                                    position: relative;
+                                    overflow: hidden;
+                                    z-index: 1;
+                                    border-radius: 4px;
+
+                                    a {
+                                        color: #2E3842;
+                                        background-color: transparent;
+                                        transition: all 0.4s ease;
+
+                                        img {
+                                            border-radius: 4px;
+                                            transform: translateZ(0);
+                                            transition: all 2000ms cubic-bezier(.19, 1, .22, 1) 0ms;
+                                            width: 100%;
+                                            vertical-align: middle;
+                                            border-style: none;
+                                        }
+
+                                        .img-fluid {
+                                            max-width: 100%;
+                                            height: auto;
+                                        }
+                                    }
+                                }
+
+                                .pro-content {
+                                    padding: 15px 0 0;
+
+                                    .title {
+                                        font-size: 17px;
+                                        font-weight: bold;
+                                        margin-bottom: 5px;
+                                        color: #272b41;
+                                        line-height: 1.2;
+
+                                        a {
+                                            color: #2E3842;
+                                        }
+                                    }
+
+                                    p.speciality {
+                                        font-size: 13px;
+                                        color: #757575;
+                                        margin-bottom: 5px;
+                                        min-height: 40px;
+                                    }
+
+                                    .rating {
+                                        color: #757575;
+                                        font-size: 14px;
+                                        margin-bottom: 15px;
+                                    }
+
+                                    .available-info {
+                                        font-size: 13px;
+                                        color: #757575;
+                                        font-weight: 400;
+                                        list-style: none;
+                                        padding: 0;
+                                        margin-bottom: 15px;
+                                    }
+
+                                    .row {
+                                        display: -ms-flexbox;
+                                        display: flex;
+                                        -ms-flex-wrap: wrap;
+                                        flex-wrap: wrap;
+                                        //margin-right: -15px;
+                                        //margin-left: -15px;
+
+                                        .col-6 {
+                                            -ms-flex: 0 0 50%;
+                                            flex: 0 0 50%;
+                                            max-width: 50%;
+                                            padding-left: 3px;
+                                            padding-right: 3px;
+
+                                            .view-btn {
+                                                color: #0de0fe;
+                                                font-size: 13px;
+                                                border: 2px solid #0de0fe;
+                                                text-align: center;
+                                                display: block;
+                                                font-weight: 500;
+                                                padding: 6px;
+                                                cursor: pointer;
+                                            }
+
+                                            .book-btn {
+                                                background-color: #0de0fe;
+                                                border: 2px solid #0de0fe;
+                                                color: #fff;
+                                                font-size: 13px;
+                                                text-align: center;
+                                                display: block;
+                                                font-weight: 500;
+                                                padding: 6px;
+                                                cursor: pointer;
+                                            }
+
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    box-shadow: 1px 6px 14px rgb(0 0 0 / 20%);
+    background: #fff;
+    border-radius: 100%;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: #fff;
+
+    &::after {
+        font-family: swiper-icons;
+        font-size: 1.3rem;
+        text-transform: none !important;
+        letter-spacing: 0;
+        font-variant: initial;
+        line-height: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0.5rem;
+    }
+
+    &:hover {
+        background: #0de0fe;
+        box-shadow: 1px 6px 14px rgb(0 0 0 / 20%);
+    }
+}
