@@ -8,6 +8,8 @@ import {
 import { BiSearch } from 'react-icons/bi';
 import { FaMapMarkerAlt } from 'react-icons/fa';
 import { MdOutlineAccessTimeFilled } from 'react-icons/md';
+import { Navigation } from 'swiper';
+import { Swiper, SwiperSlide } from 'swiper/react';
 import bgImage from '../../assets/images/search-bg.png';
 import Speciality from '../../components/app/Specialities';
 import { doctores } from '../../constants';
@@ -101,77 +103,79 @@ const index = () => {
                   sites still in their infancy. Various versions have evolved
                   over the years, sometimes
                 </p>
-                <a href='javascript:;'>Read More..</a>
+                <a>Read More..</a>
               </div>
             </div>
             <div className='col-lg-8'>
               <div className='doctor-slider'>
                 <div className='slick-list'>
-                  {doctores.map((doctor, index) => (
-                    <div className='slick-slide' key={index}>
-                      <div className='profile-widget'>
-                        <div className='doc-img'>
-                          <a>
-                            <img
-                              className='img-fluid'
-                              alt='User Image'
-                              src={doctor.image}
-                            />
-                          </a>
-                          <abbr className='fav-btn'>
-                            <i className='far fa-bookmark' />
-                          </abbr>
-                        </div>
-                        <div className='pro-content'>
-                          <h3 className='title'>
-                            <a>{doctor.name}</a>
-                            <AiFillCheckCircle
-                              style={{
-                                color: 'green',
-                                marginLeft: 6,
-                                fontSize: 20,
-                              }}
-                            />
-                          </h3>
-                          <p className='speciality'>{doctor.speciality}</p>
-                          <div className='rating'>
-                            <AiFillStar style={{ color: '#f4c150' }} />
-                            <AiFillStar style={{ color: '#f4c150' }} />
-                            <AiFillStar style={{ color: '#f4c150' }} />
-                            <AiFillStar style={{ color: '#f4c150' }} />
-                            <AiOutlineStar />
-                            <i className='fas fa-star' />
-                            <span className='d-inline-block average-rating'>
-                              ({doctor.review})
-                            </span>
-                          </div>
-                          <ul className='available-info'>
-                            <li>
-                              <FaMapMarkerAlt /> {doctor.address}
-                            </li>
-                            <li>
-                              <MdOutlineAccessTimeFilled />
-                              {doctor.availableTime}
-                            </li>
-                            <li>
-                              <AiFillDollarCircle /> {doctor.fees}
-                              <AiFillInfoCircle
-                                title='Lorem Ipsum'
-                              />
-                            </li>
-                          </ul>
-                          <div className='row'>
-                            <div className='col-6'>
-                              <a className='view-btn'>View Profile</a>
+                  <Swiper navigation={true} modules={[Navigation]}>
+                    {doctores.map((doctor, index) => (
+                      <SwiperSlide key={index}>
+                        <div className='slick-slide'>
+                          <div className='profile-widget'>
+                            <div className='doc-img'>
+                              <a>
+                                <img
+                                  className='img-fluid'
+                                  alt='User Image'
+                                  src={doctor.image}
+                                />
+                              </a>
+                              <abbr className='fav-btn'>
+                                <i className='far fa-bookmark' />
+                              </abbr>
                             </div>
-                            <div className='col-6'>
-                              <a className='book-btn'>Book Now</a>
+                            <div className='pro-content'>
+                              <h3 className='title'>
+                                <a>{doctor.name}</a>
+                                <AiFillCheckCircle
+                                  style={{
+                                    color: 'green',
+                                    marginLeft: 6,
+                                    fontSize: 20,
+                                  }}
+                                />
+                              </h3>
+                              <p className='speciality'>{doctor.speciality}</p>
+                              <div className='rating'>
+                                <AiFillStar style={{ color: '#f4c150' }} />
+                                <AiFillStar style={{ color: '#f4c150' }} />
+                                <AiFillStar style={{ color: '#f4c150' }} />
+                                <AiFillStar style={{ color: '#f4c150' }} />
+                                <AiOutlineStar />
+                                <i className='fas fa-star' />
+                                <span className='d-inline-block average-rating'>
+                                  ({doctor.review})
+                                </span>
+                              </div>
+                              <ul className='available-info'>
+                                <li>
+                                  <FaMapMarkerAlt /> {doctor.address}
+                                </li>
+                                <li>
+                                  <MdOutlineAccessTimeFilled />
+                                  {doctor.availableTime}
+                                </li>
+                                <li>
+                                  <AiFillDollarCircle /> {doctor.fees}
+                                  <AiFillInfoCircle title='Lorem Ipsum' />
+                                </li>
+                              </ul>
+                              <div className='row'>
+                                <div className='col-6'>
+                                  <a className='view-btn'>View Profile</a>
+                                </div>
+                                <div className='col-6'>
+                                  <a className='book-btn'>Book Now</a>
+                                </div>
+                              </div>
                             </div>
                           </div>
                         </div>
-                      </div>
-                    </div>
-                  ))}
+                      </SwiperSlide>
+                    ))}
+                  </Swiper>
                 </div>
               </div>
             </div>

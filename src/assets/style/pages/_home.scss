@@ -248,6 +248,11 @@
                     .slick-list {
                         @include flexDefine(flex-start, center);
 
+                        .swiper-slide {
+                            width: 280px !important;
+                            min-width: 280px !important;
+                        }
+
                         .slick-slide {
                             display: block;
                             margin-left: 0;
@@ -386,5 +391,45 @@
                 }
             }
         }
+    }
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    box-shadow: 1px 6px 14px rgb(0 0 0 / 20%);
+    background: #fff;
+    border-radius: 100%;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: #fff;
+
+    &::after {
+        font-family: swiper-icons;
+        font-size: 1.3rem;
+        text-transform: none !important;
+        letter-spacing: 0;
+        font-variant: initial;
+        line-height: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0.5rem;
+    }
+
+    &:hover {
+        background: #0de0fe;
+        box-shadow: 1px 6px 14px rgb(0 0 0 / 20%);
     }
 }
