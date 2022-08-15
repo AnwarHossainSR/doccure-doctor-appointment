@@ -6,9 +6,9 @@ import Speciality4 from './images/specialities/specialities-04.png';
 import Speciality5 from './images/specialities/specialities-05.png';
 
 const assets = {
-  images: {
+  images : {
     Logo,
-    specialities: {
+    specialities : {
       Speciality1,
       Speciality2,
       Speciality3,
