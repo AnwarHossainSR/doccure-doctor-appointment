@@ -96,3 +96,70 @@
         }
     }
 }
+
+.section-specialities {
+    background-color: #fff;
+    padding: 80px 0;
+
+    .container-fluid {
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-right: auto;
+        margin-left: auto;
+
+        .section-header {
+            width: 100%;
+            margin-bottom: 60px;
+            text-align: center;
+
+            h2 {
+                font-size: 36px;
+                font-weight: 500;
+                color: #272b41;
+            }
+
+            p {
+                color: #757575;
+                font-size: 16px;
+                max-width: 600px;
+                margin: 15px auto 0;
+            }
+        }
+
+        .row {
+            @include flexDefine(center, center);
+            flex-wrap: wrap;
+            padding: 0 15rem;
+
+            .specialities-slider {
+                @include flexDefine(flex-start, center);
+                width: 100%;
+                gap: 1rem;
+
+                .slick-slide {
+                    width: 174px;
+                    height: 204px;
+                    cursor: pointer;
+                    @include flexDefine(center, center);
+
+                    .speicality-item {
+                        .speicality-img {
+                            @include flexDefine(center, center);
+                            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+                            width: 150px;
+                            height: 150px;
+                            border-radius: 50%;
+
+
+                        }
+
+                        p {
+                            text-align: center;
+                            margin-top: 28px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
