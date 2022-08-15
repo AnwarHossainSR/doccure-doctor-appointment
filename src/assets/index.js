@@ -4,6 +4,19 @@ import Speciality2 from './images/specialities/specialities-02.png';
 import Speciality3 from './images/specialities/specialities-03.png';
 import Speciality4 from './images/specialities/specialities-04.png';
 import Speciality5 from './images/specialities/specialities-05.png';
+import Doctor1 from './images/doctors/doctor-01.jpg';
+import Doctor2 from './images/doctors/doctor-02.jpg';
+import Doctor3 from './images/doctors/doctor-03.jpg';
+import Doctor4 from './images/doctors/doctor-04.jpg';
+import Doctor5 from './images/doctors/doctor-05.jpg';
+import Doctor6 from './images/doctors/doctor-06.jpg';
+import Doctor7 from './images/doctors/doctor-07.jpg';
+import Doctor8 from './images/doctors/doctor-08.jpg';
+import Doctor9 from './images/doctors/doctor-09.jpg';
+import Doctor10 from './images/doctors/doctor-10.jpg';
+import Doctor11 from './images/doctors/doctor-11.jpg';
+import Doctor12 from './images/doctors/doctor-12.jpg';
+
 
 const assets = {
   images: {
@@ -15,6 +28,20 @@ const assets = {
       Speciality4,
       Speciality5,
     },
+    doctors: {
+      Doctor1,
+      Doctor2,
+      Doctor3,
+      Doctor4,
+      Doctor5,
+      Doctor6,
+      Doctor7,
+      Doctor8,
+      Doctor9,
+      Doctor10,
+      Doctor11,
+      Doctor12,
+    }
   },
 };
 
