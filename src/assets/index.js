@@ -24,6 +24,15 @@ import Speciality3 from './images/specialities/specialities-03.png';
 import Speciality4 from './images/specialities/specialities-04.png';
 import Speciality5 from './images/specialities/specialities-05.png';
 
+import blog1 from './images/blogs/post1.jpeg';
+import blog1author from './images/blogs/post1_author.jpeg';
+import blog2 from './images/blogs/post2.jpeg';
+import blog2author from './images/blogs/post2_author.jpeg';
+import blog3 from './images/blogs/post3.jpeg';
+import blog3author from './images/blogs/post3_author.jpeg';
+import blog4 from './images/blogs/post4.jpeg';
+import blog4author from './images/blogs/post4_author.jpeg';
+
 const assets = {
   images: {
     Logo,
@@ -56,6 +65,16 @@ const assets = {
       Feature4,
       Feature5,
       Feature6,
+    },
+    blogs: {
+      blog1,
+      blog1author,
+      blog2,
+      blog2author,
+      blog3,
+      blog3author,
+      blog4,
+      blog4author,
     },
   },
 };

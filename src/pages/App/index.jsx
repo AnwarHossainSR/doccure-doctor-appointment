@@ -236,6 +236,193 @@ const index = () => {
           </div>
         </div>
       </section>
+      <section className='section section-blogs'>
+        <div className='container-fluid'>
+          <div
+            className='section-header text-center aos aos-init aos-animate'
+            data-aos='fade-up'
+          >
+            <h2>Blogs and News</h2>
+            <p className='sub-title'>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+          </div>
+          <div
+            className='row blog-grid-row aos aos-init aos-animate'
+            data-aos='fade-up'
+          >
+            <div className='col-md-6 col-lg-3 col-sm-12'>
+              <div className='blog grid-blog'>
+                <div className='blog-image'>
+                  <a>
+                    <img
+                      className='img-fluid'
+                      src={assets.images.blogs.blog1}
+                      alt='Post Image'
+                    />
+                  </a>
+                </div>
+                <div className='blog-content'>
+                  <ul className='entry-meta meta-item'>
+                    <li>
+                      <div className='post-author'>
+                        <a href='doctor-profile.html'>
+                          <img
+                            src={assets.images.blogs.blog1author}
+                            alt='Post Author'
+                          />{' '}
+                          <span>Dr. Ruby Perrin</span>
+                        </a>
+                      </div>
+                    </li>
+                    <li>
+                      <i className='far fa-clock' /> 4 Dec 2019
+                    </li>
+                  </ul>
+                  <h3 className='blog-title'>
+                    <a href='blog-details.html'>
+                      Doccure – Making your clinic painless visit?
+                    </a>
+                  </h3>
+                  <p className='mb-0'>
+                    Lorem ipsum dolor sit amet, consectetur em adipiscing elit,
+                    sed do eiusmod tempor.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className='col-md-6 col-lg-3 col-sm-12'>
+              <div className='blog grid-blog'>
+                <div className='blog-image'>
+                  <a href='blog-details.html'>
+                    <img
+                      className='img-fluid'
+                      src={assets.images.blogs.blog2}
+                      alt='Post Image'
+                    />
+                  </a>
+                </div>
+                <div className='blog-content'>
+                  <ul className='entry-meta meta-item'>
+                    <li>
+                      <div className='post-author'>
+                        <a href='doctor-profile.html'>
+                          <img
+                            src={assets.images.blogs.blog2author}
+                            alt='Post Author'
+                          />{' '}
+                          <span>Dr. Darren Elder</span>
+                        </a>
+                      </div>
+                    </li>
+                    <li>
+                      <i className='far fa-clock' /> 3 Dec 2019
+                    </li>
+                  </ul>
+                  <h3 className='blog-title'>
+                    <a href='blog-details.html'>
+                      What are the benefits of Online Doctor Booking?
+                    </a>
+                  </h3>
+                  <p className='mb-0'>
+                    Lorem ipsum dolor sit amet, consectetur em adipiscing elit,
+                    sed do eiusmod tempor.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className='col-md-6 col-lg-3 col-sm-12'>
+              <div className='blog grid-blog'>
+                <div className='blog-image'>
+                  <a href='blog-details.html'>
+                    <img
+                      className='img-fluid'
+                      src={assets.images.blogs.blog3}
+                      alt='Post Image'
+                    />
+                  </a>
+                </div>
+                <div className='blog-content'>
+                  <ul className='entry-meta meta-item'>
+                    <li>
+                      <div className='post-author'>
+                        <a href='doctor-profile.html'>
+                          <img
+                            src={assets.images.blogs.blog3author}
+                            alt='Post Author'
+                          />{' '}
+                          <span>Dr. Deborah Angel</span>
+                        </a>
+                      </div>
+                    </li>
+                    <li>
+                      <i className='far fa-clock' /> 3 Dec 2019
+                    </li>
+                  </ul>
+                  <h3 className='blog-title'>
+                    <a href='blog-details.html'>
+                      Benefits of consulting with an Online Doctor
+                    </a>
+                  </h3>
+                  <p className='mb-0'>
+                    Lorem ipsum dolor sit amet, consectetur em adipiscing elit,
+                    sed do eiusmod tempor.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className='col-md-6 col-lg-3 col-sm-12'>
+              <div className='blog grid-blog'>
+                <div className='blog-image'>
+                  <a href='blog-details.html'>
+                    <img
+                      className='img-fluid'
+                      src={assets.images.blogs.blog4}
+                      alt='Post Image'
+                    />
+                  </a>
+                </div>
+                <div className='blog-content'>
+                  <ul className='entry-meta meta-item'>
+                    <li>
+                      <div className='post-author'>
+                        <a href='doctor-profile.html'>
+                          <img
+                            src={assets.images.blogs.blog4author}
+                            alt='Post Author'
+                          />{' '}
+                          <span>Dr. Sofia Brient</span>
+                        </a>
+                      </div>
+                    </li>
+                    <li>
+                      <i className='far fa-clock' /> 2 Dec 2019
+                    </li>
+                  </ul>
+                  <h3 className='blog-title'>
+                    <a href='blog-details.html'>
+                      5 Great reasons to use an Online Doctor
+                    </a>
+                  </h3>
+                  <p className='mb-0'>
+                    Lorem ipsum dolor sit amet, consectetur em adipiscing elit,
+                    sed do eiusmod tempor.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            className='view-all text-center aos aos-init aos-animate'
+            data-aos='fade-up'
+          >
+            <a href='blog-list.html' className='btn btn-primary'>
+              View All
+            </a>
+          </div>
+        </div>
+      </section>
     </>
   );
 };

@@ -22,11 +22,11 @@
                     margin-bottom: 10px;
                     font-size: 40px;
                     font-weight: 600;
-                    color: #272b41;
+                    color: $color-secondary-black;
                 }
 
                 p {
-                    color: #757575;
+                    color: $text-secondary;
                     font-size: 20px;
                     margin-bottom: 0;
                 }
@@ -47,11 +47,11 @@
                     margin-bottom: 1.25rem;
 
                     .form-control {
-                        color: #333;
+                        color: $color-gray;
                         font-size: 15px;
                         min-height: 46px;
                         padding: 6px 15px;
-                        border: 1px solid #ccc;
+                        border: 1px solid $color-text;
                         box-shadow: inset 0 0px 0px rgb(0 0 0 / 8%);
                         border-radius: 5px;
                         padding-left: 35px;
@@ -62,10 +62,10 @@
                         font-size: 1rem;
                         font-weight: 400;
                         line-height: 1.5;
-                        color: #495057;
-                        background-color: #fff;
+                        color: $color-black;
+                        background-color: $color-white;
                         background-clip: padding-box;
-                        border: 1px solid #ced4da;
+                        border: 1px solid $border-color-gray;
                         border-radius: 0.25rem;
                         transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
                     }
@@ -73,7 +73,7 @@
                     .form-text {
                         display: block;
                         margin-top: 0.25rem;
-                        color: #757575;
+                        color: $text-secondary;
                         font-size: 13px;
                     }
                 }
@@ -98,7 +98,7 @@
 }
 
 .section-specialities {
-    background-color: #fff;
+    background-color: $color-white;
     padding: 80px 0;
 
     .container-fluid {
@@ -115,11 +115,11 @@
             h2 {
                 font-size: 36px;
                 font-weight: 500;
-                color: #272b41;
+                color: $color-secondary-black;
             }
 
             p {
-                color: #757575;
+                color: $text-secondary;
                 font-size: 16px;
                 max-width: 600px;
                 margin: 15px auto 0;
@@ -165,7 +165,7 @@
 }
 
 .section-doctor {
-    background-color: #f8f9fa;
+    background-color: $color-text;
     padding: 80px 0;
 
     .container-fluid {
@@ -194,7 +194,7 @@
                     }
 
                     p {
-                        color: #757575;
+                        color: $text-secondary;
                         font-size: 16px;
                         margin-bottom: 0;
                         margin-top: 15px;
@@ -210,9 +210,9 @@
                     }
 
                     a {
-                        background-color: #0de0fe;
+                        background-color: $color-paste;
                         border-radius: 4px;
-                        color: #fff;
+                        color: $color-white;
                         display: inline-block;
                         font-size: 16px;
                         font-weight: 500;
@@ -268,8 +268,8 @@
                                 box-shadow: 2px 2px 13px rgb(0 0 0 / 10%);
                                 margin-bottom: 0;
                                 width: 100%;
-                                background-color: #fff;
-                                border: 1px solid #f0f0f0;
+                                background-color: $color-white;
+                                border: 1px solid $border-color-dove-gray;
                                 border-radius: 4px;
                                 margin-bottom: 30px;
                                 position: relative;
@@ -287,7 +287,7 @@
                                     border-radius: 4px;
 
                                     a {
-                                        color: #2E3842;
+                                        color: $color-gray;
                                         background-color: transparent;
                                         transition: all 0.4s ease;
 
@@ -314,30 +314,30 @@
                                         font-size: 17px;
                                         font-weight: bold;
                                         margin-bottom: 5px;
-                                        color: #272b41;
+                                        color: $color-secondary-black;
                                         line-height: 1.2;
 
                                         a {
-                                            color: #2E3842;
+                                            color: $color-gray;
                                         }
                                     }
 
                                     p.speciality {
                                         font-size: 13px;
-                                        color: #757575;
+                                        color: $text-secondary;
                                         margin-bottom: 5px;
                                         min-height: 40px;
                                     }
 
                                     .rating {
-                                        color: #757575;
+                                        color: $text-secondary;
                                         font-size: 14px;
                                         margin-bottom: 15px;
                                     }
 
                                     .available-info {
                                         font-size: 13px;
-                                        color: #757575;
+                                        color: $text-secondary;
                                         font-weight: 400;
                                         list-style: none;
                                         padding: 0;
@@ -360,9 +360,9 @@
                                             padding-right: 3px;
 
                                             .view-btn {
-                                                color: #0de0fe;
+                                                color: $color-paste;
                                                 font-size: 13px;
-                                                border: 2px solid #0de0fe;
+                                                border: 2px solid $color-paste;
                                                 text-align: center;
                                                 display: block;
                                                 font-weight: 500;
@@ -371,9 +371,9 @@
                                             }
 
                                             .book-btn {
-                                                background-color: #0de0fe;
-                                                border: 2px solid #0de0fe;
-                                                color: #fff;
+                                                background-color: $color-paste;
+                                                border: 2px solid $color-paste;
+                                                color: $color-white;
                                                 font-size: 13px;
                                                 text-align: center;
                                                 display: block;
@@ -408,12 +408,12 @@
     -ms-transform: translate(0, -50%);
     transform: translate(0, -50%);
     box-shadow: 1px 6px 14px rgb(0 0 0 / 20%);
-    background: #fff;
+    background: $color-white;
     border-radius: 100%;
     cursor: pointer;
     border: none;
     outline: none;
-    background: #fff;
+    background: $color-white;
 
     &::after {
         font-family: swiper-icons;
@@ -429,13 +429,13 @@
     }
 
     &:hover {
-        background: #0de0fe;
+        background: $color-paste;
         box-shadow: 1px 6px 14px rgb(0 0 0 / 20%);
     }
 }
 
 .section-features {
-    background-color: #fff;
+    background-color: $color-white;
     padding: 80px 0;
 
     .container-fluid {
@@ -476,7 +476,7 @@
                     }
 
                     p {
-                        color: #757575;
+                        color: $text-secondary;
                         font-size: 16px;
                         margin-bottom: 0;
                         margin-top: 15px;
@@ -542,6 +542,165 @@
                         }
                     }
                 }
+            }
+        }
+    }
+}
+
+.section-blogs {
+    background-color: $color-text;
+    padding: 80px 0;
+
+    .container-fluid {
+        padding-left: 30px;
+        padding-right: 30px;
+
+        .section-header {
+            margin-bottom: 60px;
+            text-align: center;
+
+            h2 {
+                font-size: 36px;
+                margin-bottom: 0;
+                font-weight: 500;
+            }
+
+            .sub-title {
+                color: $text-secondary;
+                font-size: 16px;
+                max-width: 600px;
+                margin: 20px auto 0;
+            }
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+
+            .col-lg-3 {
+                flex: 0 0 auto;
+                width: 24%;
+
+                .blog {
+                    border: 1px solid $border-color-dove-gray;
+                    background-color: $color-white;
+                    border-radius: 4px;
+                    margin-bottom: 30px;
+                    padding: 1.5rem;
+                    position: relative;
+
+                    .blog-image {
+                        margin-bottom: 20px;
+                        display: block;
+                        position: relative;
+                        width: 100%;
+                        height: auto;
+                        overflow: hidden;
+
+                        a {
+                            display: block;
+                            position: relative;
+                            width: 100%;
+                            height: auto;
+
+                            img {
+                                max-width: 100%;
+                                display: block;
+                                position: relative;
+                                width: 100%;
+                                height: auto;
+                            }
+                        }
+                    }
+
+                    .blog-content {
+                        position: relative;
+
+                        .entry-meta {
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            flex-wrap: wrap;
+                            margin-bottom: 0;
+                            color: $text-secondary;
+                            font-size: 14px;
+                            list-style: none;
+                            padding: 0;
+
+                            li {
+                                margin-bottom: 10px;
+                                display: inline-block;
+                                margin-right: 15px;
+
+                                .post-author {
+                                    width: 189px;
+                                    overflow: hidden;
+                                    white-space: nowrap;
+                                    text-overflow: ellipsis;
+
+                                    a {
+                                        display: flex;
+                                        align-items: center;
+                                        color: $color-gray;
+
+                                        img {
+                                            border-radius: 100%;
+                                            width: 28px;
+                                            flex: 0 0 28px;
+                                            margin-right: 5px;
+                                            vertical-align: middle;
+                                        }
+
+                                        span {
+                                            overflow: hidden;
+                                            text-overflow: ellipsis;
+                                            white-space: nowrap;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        .blog-title {
+                            font-size: 18px;
+                            margin: 0 0 5px;
+                            min-height: 43px;
+
+                            a {
+                                color: $color-secondary-black;
+                            }
+                        }
+
+                        p {
+                            margin: 0 0 15px;
+                            color: $text-secondary;
+                            font-size: 14px;
+                        }
+                    }
+                }
+
+                .grid-blog {
+                    padding: 20px;
+                }
+            }
+        }
+
+        .view-all {
+            text-align: center !important;
+
+            .btn {
+                margin-top: 20px;
+                font-size: 16px;
+                font-weight: 600;
+                padding: 12px 30px;
+                color: $color-white;
+                background-color: $color-green;
+                border: 2px solid $color-green;
+                box-shadow: inset 0 0 0 0 $color-white;
+                -moz-transition: all 0.5s;
+                -o-transition: all 0.5s;
+                transition: all 0.5s;
             }
         }
     }
