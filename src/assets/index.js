@@ -1,3 +1,11 @@
+import blog1 from './images/blogs/post1.jpeg';
+import blog1author from './images/blogs/post1_author.jpeg';
+import blog2 from './images/blogs/post2.jpeg';
+import blog2author from './images/blogs/post2_author.jpeg';
+import blog3 from './images/blogs/post3.jpeg';
+import blog3author from './images/blogs/post3_author.jpeg';
+import blog4 from './images/blogs/post4.jpeg';
+import blog4author from './images/blogs/post4_author.jpeg';
 import Doctor1 from './images/doctors/doctor-01.jpg';
 import Doctor2 from './images/doctors/doctor-02.jpg';
 import Doctor3 from './images/doctors/doctor-03.jpg';
@@ -24,26 +32,17 @@ import Speciality3 from './images/specialities/specialities-03.png';
 import Speciality4 from './images/specialities/specialities-04.png';
 import Speciality5 from './images/specialities/specialities-05.png';
 
-import blog1 from './images/blogs/post1.jpeg';
-import blog1author from './images/blogs/post1_author.jpeg';
-import blog2 from './images/blogs/post2.jpeg';
-import blog2author from './images/blogs/post2_author.jpeg';
-import blog3 from './images/blogs/post3.jpeg';
-import blog3author from './images/blogs/post3_author.jpeg';
-import blog4 from './images/blogs/post4.jpeg';
-import blog4author from './images/blogs/post4_author.jpeg';
-
 const assets = {
-  images: {
+  images : {
     Logo,
-    specialities: {
+    specialities : {
       Speciality1,
       Speciality2,
       Speciality3,
       Speciality4,
       Speciality5,
     },
-    doctors: {
+    doctors : {
       Doctor1,
       Doctor2,
       Doctor3,
@@ -57,7 +56,7 @@ const assets = {
       Doctor11,
       Doctor12,
     },
-    features: {
+    features : {
       FeatureIcon,
       Feature1,
       Feature2,
@@ -66,7 +65,7 @@ const assets = {
       Feature5,
       Feature6,
     },
-    blogs: {
+    blogs : {
       blog1,
       blog1author,
       blog2,
