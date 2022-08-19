@@ -450,6 +450,99 @@
             margin-top: calc(-1 * var(--bs-gutter-y));
             margin-right: calc(-.5 * var(--bs-gutter-x));
             margin-left: calc(-.5 * var(--bs-gutter-x));
+
+            .features-img {
+                flex: 0 0 auto;
+                width: 41.66666667%;
+
+                .img-fluid {
+                    max-width: 100%;
+                    height: auto;
+                }
+            }
+
+            .col-md-7 {
+                flex: 0 0 auto;
+                width: 58.33333333%;
+
+                .section-header {
+                    margin-bottom: 60px;
+
+                    h2 {
+                        font-size: 36px;
+                        margin-bottom: 0;
+                        font-weight: 500;
+                        margin-top: 0.5rem !important;
+                    }
+
+                    p {
+                        color: #757575;
+                        font-size: 16px;
+                        margin-bottom: 0;
+                        margin-top: 15px;
+                    }
+                }
+
+                .features-slider {
+                    position: relative;
+                    display: block;
+                    box-sizing: border-box;
+                    -webkit-user-select: none;
+                    -moz-user-select: none;
+                    -ms-user-select: none;
+                    user-select: none;
+                    -webkit-touch-callout: none;
+                    -khtml-user-select: none;
+                    -ms-touch-action: pan-y;
+                    touch-action: pan-y;
+                    -webkit-tap-highlight-color: transparent;
+
+                    .slick-list {
+                        padding: 16px 50px !important;
+
+                        .swiper-slide {
+                            width: 115px !important;
+                            min-width: 157.5px !important;
+                        }
+
+                        .slick-track {
+                            position: relative;
+                            top: 0;
+                            left: 0;
+                            display: block;
+                            margin-left: auto;
+                            margin-right: auto;
+
+
+                            .slick-slide {
+                                margin-right: 62px;
+                                outline: none !important;
+                                display: block;
+                                float: left;
+                                height: 100%;
+                                min-height: 1px;
+
+                                .feature-item {
+                                    text-align: center;
+
+                                    img {
+                                        border-radius: 100%;
+                                        box-shadow: 1px 6px 14px rgb(0 0 0 / 20%);
+                                        height: 115px;
+                                        object-fit: cover;
+                                        width: 115px;
+                                    }
+
+                                    p {
+                                        font-weight: 500;
+                                        margin: 20px 0 0;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }

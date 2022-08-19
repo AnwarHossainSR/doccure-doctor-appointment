@@ -109,3 +109,29 @@ export const doctores = [
     fees: '$200 - $700',
   },
 ];
+export const features = [
+  {
+    image: assets.images.features.Feature1,
+    title: 'Patient Care',
+  },
+  {
+    image: assets.images.features.Feature2,
+    title: 'Test Room',
+  },
+  {
+    image: assets.images.features.Feature3,
+    title: 'ICU',
+  },
+  {
+    image: assets.images.features.Feature4,
+    title: 'Laboratory',
+  },
+  {
+    image: assets.images.features.Feature5,
+    title: 'Operation',
+  },
+  {
+    image: assets.images.features.Feature6,
+    title: 'Medical Care',
+  },
+];
