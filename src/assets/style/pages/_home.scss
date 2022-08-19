@@ -51,7 +51,7 @@
                         font-size: 15px;
                         min-height: 46px;
                         padding: 6px 15px;
-                        border: 1px solid $color-text;
+                        border: 1px solid $color-gray-secondary;
                         box-shadow: inset 0 0px 0px rgb(0 0 0 / 8%);
                         border-radius: 5px;
                         padding-left: 35px;
@@ -165,7 +165,7 @@
 }
 
 .section-doctor {
-    background-color: $color-text;
+    background-color: $color-gray-secondary;
     padding: 80px 0;
 
     .container-fluid {
@@ -548,7 +548,7 @@
 }
 
 .section-blogs {
-    background-color: $color-text;
+    background-color: $color-gray-secondary;
     padding: 80px 0;
 
     .container-fluid {
