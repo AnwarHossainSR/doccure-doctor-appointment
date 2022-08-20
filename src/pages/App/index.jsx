@@ -8,6 +8,7 @@ import {
 import { BiSearch } from 'react-icons/bi';
 import { FaMapMarkerAlt } from 'react-icons/fa';
 import { MdOutlineAccessTimeFilled } from 'react-icons/md';
+import { Link } from 'react-router-dom';
 import { Navigation } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import assets from '../../assets';
@@ -104,7 +105,9 @@ const index = () => {
                   sites still in their infancy. Various versions have evolved
                   over the years, sometimes
                 </p>
-                <a>Read More..</a>
+                <Link to='doctors' className='read-more'>
+                  <span>Read More..</span>
+                </Link>
               </div>
             </div>
             <div className='col-lg-8'>
@@ -120,20 +123,22 @@ const index = () => {
                         <div className='slick-slide'>
                           <div className='profile-widget'>
                             <div className='doc-img'>
-                              <a>
+                              <Link to='doctors/doctor-slug'>
                                 <img
                                   className='img-fluid'
                                   alt='User Image'
                                   src={doctor.image}
                                 />
-                              </a>
+                              </Link>
                               <abbr className='fav-btn'>
                                 <i className='far fa-bookmark' />
                               </abbr>
                             </div>
                             <div className='pro-content'>
                               <h3 className='title'>
-                                <a>{doctor.name}</a>
+                                <Link to='doctors/doctor-slug'>
+                                  {doctor.name}
+                                </Link>
                                 <AiFillCheckCircle
                                   style={{
                                     color: 'green',
@@ -169,7 +174,12 @@ const index = () => {
                               </ul>
                               <div className='row'>
                                 <div className='col-6'>
-                                  <a className='view-btn'>View Profile</a>
+                                  <Link
+                                    to='doctors/doctor-slug'
+                                    className='view-btn'
+                                  >
+                                    View Profile
+                                  </Link>
                                 </div>
                                 <div className='col-6'>
                                   <a className='book-btn'>Book Now</a>
@@ -187,7 +197,7 @@ const index = () => {
           </div>
         </div>
       </section>
-      <section class='section section-features'>
+      <section className='section section-features'>
         <div className='container-fluid'>
           <div className='row'>
             <div className='features-img'>
@@ -413,11 +423,8 @@ const index = () => {
               </div>
             </div>
           </div>
-          <div
-            className='view-all text-center aos aos-init aos-animate'
-            data-aos='fade-up'
-          >
-            <a href='blog-list.html' className='btn btn-primary'>
+          <div className='view-all'>
+            <a href='blog-list.html' className='btn'>
               View All
             </a>
           </div>
