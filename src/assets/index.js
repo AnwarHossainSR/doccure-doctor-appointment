@@ -32,10 +32,12 @@ import blog3 from './images/blogs/post3.jpeg';
 import blog3author from './images/blogs/post3_author.jpeg';
 import blog4 from './images/blogs/post4.jpeg';
 import blog4author from './images/blogs/post4_author.jpeg';
+import LoginBanner from './images/login-banner.png';
 
 const assets = {
   images: {
     Logo,
+    LoginBanner,
     specialities: {
       Speciality1,
       Speciality2,
