@@ -1,4 +1,5 @@
 import React from 'react';
+//import 'react-loader-spinner/dist/loader/css/react-spinner-loader.css';
 import { useLocation } from 'react-router-dom';
 import 'swiper/css/bundle';
 import AdminLayout from './components/layouts/Admin';
