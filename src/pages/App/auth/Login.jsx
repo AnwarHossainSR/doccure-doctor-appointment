@@ -22,15 +22,17 @@ const Login = () => {
                 <div className='form-group form-focus'>
                   <input
                     type='email'
-                    className='form-control floating'
+                    className='form-control'
                     placeholder='email'
+                    autoComplete='off'
                   />
                 </div>
                 <div className='form-group form-focus'>
                   <input
                     type='password'
-                    className='form-control floating'
+                    className='form-control'
                     placeholder='password'
+                    autoComplete='off'
                   />
                 </div>
                 <div className='text-right'>

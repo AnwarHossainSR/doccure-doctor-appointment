@@ -1,15 +1,16 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import Home from '../../../pages/App';
+import Login from '../../../pages/App/auth/Login';
+import Registration from '../../../pages/App/auth/Registration';
 import Doctors from '../../../pages/App/doctors';
 import DoctorProfile from '../../../pages/App/doctors/DoctorProfile';
 import Footer from '../../app/Footer';
 import Navbar from '../../app/Navbar';
-import Registration from '../../../pages/App/auth/Registration';
-import Login from '../../../pages/App/auth/Login';
+import Loader from './loader';
 const index = () => {
   return (
-    <div>
+    <Suspense fallback={<Loader />}>
       <Navbar />
       <div className='container'>
         <Routes>
@@ -25,7 +26,7 @@ const index = () => {
         </Routes>
       </div>
       <Footer />
-    </div>
+    </Suspense>
   );
 };
 
