@@ -1,15 +1,15 @@
 export const doctorSubmenu = [
   {
     name: 'Doctor Dashboard',
-    link: 'Appointment',
+    link: '/dashboard',
   },
   {
     name: 'Appointment',
-    link: 'appointment',
+    link: '/appointment',
   },
   {
     name: 'Schedule Timing',
-    link: 'schedule',
+    link: '/schedule',
   },
 ];
 
@@ -25,5 +25,5 @@ export const patientSubmenu = [
   {
     name: 'Doctor Profile',
     link: '/doctor-profile',
-  }
+  },
 ];
