@@ -34,17 +34,17 @@ import Speciality4 from "./images/specialities/specialities-04.png";
 import Speciality5 from "./images/specialities/specialities-05.png";
 
 const assets = {
-  images: {
+  images : {
     Logo,
     LoginBanner,
-    specialities: {
+    specialities : {
       Speciality1,
       Speciality2,
       Speciality3,
       Speciality4,
       Speciality5,
     },
-    doctors: {
+    doctors : {
       Doctor1,
       Doctor2,
       Doctor3,
@@ -58,7 +58,7 @@ const assets = {
       Doctor11,
       Doctor12,
     },
-    features: {
+    features : {
       FeatureIcon,
       Feature1,
       Feature2,
@@ -67,7 +67,7 @@ const assets = {
       Feature5,
       Feature6,
     },
-    blogs: {
+    blogs : {
       blog1,
       blog1author,
       blog2,
