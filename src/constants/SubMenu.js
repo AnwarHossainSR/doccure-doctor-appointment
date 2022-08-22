@@ -1,29 +1,29 @@
 export const doctorSubmenu = [
   {
-    name : 'Doctor Dashboard',
-    link : 'Appointment',
+    name: "Doctor Dashboard",
+    link: "Appointment",
   },
   {
-    name : 'Appointment',
-    link : 'appointment',
+    name: "Appointment",
+    link: "appointment",
   },
   {
-    name : 'Schedule Timing',
-    link : 'schedule',
+    name: "Schedule Timing",
+    link: "schedule",
   },
 ];
 
 export const patientSubmenu = [
   {
-    name : 'Doctors',
-    link : '/doctors',
+    name: "Doctors",
+    link: "/doctors",
   },
   {
-    name : 'Search Doctor',
-    link : '/search',
+    name: "Search Doctor",
+    link: "/search",
   },
   {
-    name : 'Doctor Profile',
-    link : '/doctor-profile',
-  }
+    name: "Doctor Profile",
+    link: "/doctor-profile",
+  },
 ];
