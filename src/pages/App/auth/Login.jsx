@@ -1,4 +1,7 @@
+import { FaFacebookF, FaGoogle } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 import assets from '../../../assets';
+
 const Login = () => {
   return (
     <div className='content'>
@@ -21,6 +24,7 @@ const Login = () => {
               <form>
                 <div className='form-group form-focus'>
                   <input
+                    name='email'
                     type='email'
                     className='form-control'
                     placeholder='email'
@@ -29,6 +33,7 @@ const Login = () => {
                 </div>
                 <div className='form-group form-focus'>
                   <input
+                    name='password'
                     type='password'
                     className='form-control'
                     placeholder='password'
@@ -36,12 +41,12 @@ const Login = () => {
                   />
                 </div>
                 <div className='text-right'>
-                  <a className='forgot-link' href='forgot-password.html'>
+                  <Link className='forgot-link' to='/forgot-password'>
                     Forgot Password ?
-                  </a>
+                  </Link>
                 </div>
                 <button
-                  className='btn btn-primary btn-block btn-lg login-btn'
+                  className='btn btn-primary btn-block login-btn'
                   type='submit'
                 >
                   Login
@@ -52,18 +57,19 @@ const Login = () => {
                 </div>
                 <div className='social-login'>
                   <div className='col-6'>
-                    <a href='#' className='btn-facebook'>
-                      <i className='fab fa-facebook-f mr-1' /> Login
-                    </a>
+                    <Link to='#' className='btn-facebook'>
+                      <FaFacebookF /> Login
+                    </Link>
                   </div>
                   <div className='col-6'>
-                    <a href='#' className='btn-google'>
-                      <i className='fab fa-google mr-1' /> Login
-                    </a>
+                    <Link to='#' className='btn-google'>
+                      <FaGoogle /> Login
+                    </Link>
                   </div>
                 </div>
                 <div className='dont-have'>
-                  Don’t have an account? <a href='register.html'>Register</a>
+                  Don’t have an account?{' '}
+                  <Link to='/registration'>Register</Link>
                 </div>
               </form>
             </div>

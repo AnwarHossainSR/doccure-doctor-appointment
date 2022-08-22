@@ -15,11 +15,15 @@ export const doctorSubmenu = [
 
 export const patientSubmenu = [
   {
+    name: 'Doctors',
+    link: '/doctors',
+  },
+  {
     name: 'Search Doctor',
-    link: 'search',
+    link: '/search',
   },
   {
     name: 'Doctor Profile',
-    link: 'doctor-profile',
+    link: '/doctor-profile',
   }
 ];
